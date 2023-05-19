@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    }
+    
+    h1{
+        color: #021A9B;;
+    text-align: center;    
+    }
+    h3{
+        text-align: center;
+        size: 10px;
+    }
+    h2{
+        text-align: right;
+        color:  #021A9B;;
+    }
+    .rec-sq {
+        display: flex;
+        gap: 2em;
+        margin: 2em;
+       }
+      
+       .rectangle {
+        width: 24rem;
+        height: 14rem;
+        position: absolute;
+    width:100%;
+    height: 364px;
+    left: -1px;
+    top: 16 4px;
+        background:  #021A9B;
+        color: antiquewhite;  
+    
+       }
+       
+      
+     
+    h4{
+        color: aliceblue;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 34px;
+        line-height: 30px;
+        text-align: center;
+        
+    
+    }
+    .voltar img{
+position: absolute;
+width: 100px;
+height: 100px;
+left: 10px;
+top: 10px;
+    }  
+    .container img {
+      
+    position: absolute;
+    width: 364px;
+    height: 333px;
+    right: 2px;
+    top: 170px;
+    
+       }
+       .filtro{
+        position: absolute;
+        width: 300px;
+        height: 105px;
+        left: 166px;
+        top: 558px;
+        
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        line-height: 25px;
+        color: black;
+       }
+       label {
+        display: inline-block;
+        width: 1000px;
+        text-align: left;
+    }
+    .emprestimo{
+        position: absolute;
+        width: 190px;
+        height: 105px;
+        right: 706px;
+        top: 558px;
+    }
+    select {
+
+    
+        background-color: white;
+        border: thin solid #021A9B;
+        border-radius: 4px;
+        display: inline-block;
+        font: inherit;
+        line-height: 1.5em;
+        padding: 0.5em 3.5em 0.5em 1em;
+      
+      
+        margin: 0;      
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      
+      .botao{
+        position: absolute;
+        top: 1200px;
+        left: 200px;
+      }
+      .lista{
+        top: 500px;
+        color: black;
+      }
+    
+      
+      
+      
+      
+      
+      
+      

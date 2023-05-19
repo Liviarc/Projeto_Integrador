@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    }
+    
+    h1{
+        color: #021A9B;;
+    text-align: center;    
+    }
+    h3{
+        text-align: center;
+        size: 10px;
+    }
+    h2{
+        text-align: right;
+        color:  #021A9B;;
+    }
+    .rec-sq {
+        display: flex;
+        gap: 2em;
+        margin: 2em;
+       }
+      
+       .rectangle {
+        width: 24rem;
+        height: 14rem;
+        position: absolute;
+    width:100%;
+    height: 364px;
+    left: -1px;
+    top: 16 4px;
+        background:  #021A9B;
+        color: antiquewhite;  
+       }
+       h4{
+        color: aliceblue;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 34px;
+        line-height: 30px;
+        text-align: center;
+        
+    
+    } 
+    .voltar img{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 10px;
+        top: 10px;
+            } 
+    .container img {
+  
+        position: absolute;
+        width: 264px;
+        height: 333px;
+        right: 20px;
+        top: 170px;
+        
+           }
+           .formulario {
+            max-width: 650px;
+            text-align: left;
+            position: relative;
+            color: black;
+            left: 33%;
+            margin-top: 485px;
+          }
+          form div + div {
+            margin-top: 1em;
+        }
+        label {
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+        }
+        input, textarea {
+            
+            font: 1em sans-serif;
+        
+            
+            width: 300px;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;   
+            border: 1px solid #999;
+        }
+        input:focus, textarea:focus {
+            border-color: #000;
+        }
+        textarea {
+            vertical-align: top;
+        
+            height: 5em;
+            resize: vertical;
+        }
+        .button {
+           
+            padding-left: 90px; 
+        }
+        button {
+          
+            margin-left: .5em;
+        }

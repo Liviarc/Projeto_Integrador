@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./emprestimo.css">
+        <title>Pagina Inicial</title>
+        <meta charset="utf-8"/>
+        
+        
+        </head>
+<body>
+    <div>
+        <h1>EmpréstiMais</h1>
+        <h3>Sua fonte confiavel para informações de Empréstimso</h3>
+        <div class="voltar"> <a href="./Home_page.html"><img src="./seta-para-tras_318-654397.avif" alt=""></a></div>
+    </div>
+        <div class="rec">
+          <div class="rectangle">
+        <h4>Empréstimos</h4>
+            <p style="text-align: center;font-size: 30px;">Com o nosso comparador</p>
+            <p style="text-align: center; font-size: 30px;">você consegue ter mais facilidade ao comparar os créditos.</p>
+          </div>
+          
+
+          
+          <div class="container"> <img src=./image-removebg-preview1.png > </div>
+        </div>
+        <form>
+            <div class="filtro">
+                <p style="font-size: x-large;">Como Funciona o EmpréstiMais?</p>
+                <p style="font-size: large;">Situação</p>
+                <div class="Situacao" style="width:200px;">
+                  <select id="situacao">
+                    <option value="0">Selecione uma opção:</option>
+                    <option value="semRestricao">Sem Restrição</option>
+                    <option value="negativado">Negativado</option>
+                  </select>
+                </div>
+                <p style="font-size: large;">Valor do Emprestimo</p>
+                <div class="Valor" style="width:200px;">
+                  <select id="valor">
+                    <option value="0">Selecione um valor:</option>
+                    <option value="range0to2k">R$0 - R$2.000</option>
+                    <option value="range2to5k">R$2.001 - R$5.000</option>
+                    <option value="range5to10k">R$5.001 - R$10.000</option>
+                    <option value="range10to15k">R$10.001 - R$15.000</option>
+                    <option value="range15to25k">R$15.001 - R$25.000</option>
+                    <option value="range35to50k">R$35.001 - R$50.000</option>
+                    <option value="range50to100k">R$50.001 - R$100.000</option>
+                    <option value="range100kplus">Mais de R$100.000</option>
+                  </select>
+                </div>
+              <p style="font-size: large;">Tipo de empréstimo</p>
+              <div class="Tipo" style="width:200px;">
+                <select id="tipo">
+                  <option value="0">Tipo de emprestimo:</option>
+                  <option value="fgts">FGTS</option>
+                  <option value="pessoal">Pessoal</option>
+                  <option value="consignado">Consignado</option>
+                  <option value="empresarial">Empresarial</option>
+                </select>
+              </div>
+              <p style="font-size: large;">Perfil de solicitação</p>
+              <div class="Perfil" style="width:200px;">
+                <select id="tipoPessoa">
+                  <option value="0">Selecione o Perfil</option>
+                  <option value="aposentado">Aposentado</option>
+                  <option value="autonomo">Autonomo</option>
+                  <option value="assalariado">Assalariado</option>
+                  <option value="desempregado">Desempregado</option>
+                  <option value="militar">Militar</option>
+                  <option value="servidor">Servidor Publico</option>
+                </select>
+              </div>
+            
+            </div>
+                 
+          </form>
+          <div class="botao">
+            <button onclick="submit()" style="background-color: rgb(222, 222, 235);border-color: blue;color:black;">Consultar</button>
+          </div>
+            <script type="text/javascript">
+              function update() {
+                var select = document.getElementById('situacao')
+
+            select.addEventListener('change', function(){
+                console.log(select.value)   
+          })
+                 
+              }
+        
+              update();
+            </script>
+            <script type="text/javascript">
+              function update() {
+                var select = document.getElementById('valor')
+
+            select.addEventListener('change', function(){
+                console.log(select.value)   
+          })
+                 
+              }
+        
+              update();
+            </script>
+            <script type="text/javascript">
+              function update() {
+                var select = document.getElementById('tipo')
+
+            select.addEventListener('change', function(){
+                console.log(select.value)   
+          })
+                 
+              }
+        
+              update();
+            </script>
+            <script type="text/javascript">
+              function update() {
+                var select = document.getElementById('tipoPessoa')
+
+            select.addEventListener('change', function(){
+                console.log(select.value)   
+          })
+                 
+              }
+        
+              update();
+            </script>
+              <script type="text/javascript">
+                function submit() {
+                  var situacao = document.getElementById('situacao')
+                  var valor = document.getElementById('valor')
+                  var tipo = document.getElementById('tipo')
+                  var tipoPessoa = document.getElementById('tipoPessoa')
+                  console.log(situacao.value)
+                  console.log(valor.value)
+                  console.log(tipo.value)
+                  console.log(tipoPessoa.value)
+             
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                alert(xhr.response);
+            }
+        }
+        xhr.open('get', 'http://localhost:3000/propostas?valor=range15to25k&tipo=fgts&tipoPessoa=assalariado&situacao=semRestricao', true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+        xhr.send();
+    }
+            
+            </script>
+        
+         
+         
